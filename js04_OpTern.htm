@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>js04_OpTern.htm</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8" />
+</head>
+<body>
+
+<!-- Linha de comentário HTML: operador ternário
+sintaxe : (<condição>) ? <expressão para verdadeiro> :<expressão para falso> -->
+ 
+<script language="JavaScript">
+
+   
+/* Definição das variaveis */
+document.write('<p>------------------------------------------------');
+document.write('<p>Definição e atribuição de variáveis: ');
+document.write('<p>var js_num = <b>30;</br> (js_num recebe valor 30)');
+var js_num = 20;
+
+/* Aplicação de Operador Ternário utlizando Operadores Relacionais  */
+document.write('<p>------------------------------------------------');
+document.write('<p>Operador ternário <b>(? :)</b> com Operadores relacionais (==, !=, <): ');
+
+document.write('<p>js_num <b>==</b> 20 <b>?</b> "SIM" <b>:</b> "NÂO" - Resposta => ');
+    ((js_num == 20) ? document.write('<b>SIM</b>') : document.write('<b>NÂO</b>'));
+
+document.write('<p>js_num <b>!=</b> 20 <b>?</b> "SIM" <b>:</b> "NÂO" -Resposta =>');
+    ((js_num !=20) ? document.write('<b>SIM</b>') : document.write('<b>NÂO</b>'));
+
+document.write('<p>js_num <b><</b> 50 <b>?</b> "SIM" <b>:</b> "NÂO" - Resposta =>');
+    ((js_num <50) ? document.write('<b>SIM</b>') : document.write('<b>NÂO</b>'));
+
+/* Aplicação do ternário utilizando expressão aritmética e operador relacional */
+document.write('<p>-----------------------------------------------------');
+document.write('<p>OPERADOR TERNÁRIO com EXPRESSÃO ARITMÉTICA: ');
+document.write('<p>(js_num <b>-</b> 20 ) <b>==</b> 0 <b>?</b> "SIM" <b>:</b> "NÂO" - Resposta => ');
+    ((js_num - 20)==0) ? document.write('<b>SIM</b> + js_num') : document.write('<b>NÂO</b>');
+
+
+/*  TABELA UNICODE
+    Utilização da tabela Unicode para configuração dos caracteres de acentuação
+        - A mensagem "** Mês Inválido ! **" com Unicode ficará "** M\u00eas Inv\u00e1lido! **"
+        - ê (letra minúscula "e" com acento circunflexo) = \u00ea
+        - á (letra minúscula "a" com acento agudo) = \u00e1     
+*/
+//-->
+</script>    
+</body>
+</html>

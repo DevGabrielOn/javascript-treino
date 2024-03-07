@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>js03_funcao.htm</title>
+</head>
+<body>
+
+
+
+//Definição da área e dos elementos do formulario
+<form name = "MeuFormulario" action=" " method="post">
+	Entre com o valor 1: <input type="text" name="f_n1" /><p></p>
+	Entre com o valor 2: <input type="text" name="f_n2" /><p></p>
+	<input type="button" name="bt_somar" value="Somar" onclick="soma()"/>
+	<input type="reset" name="bt_apagar" value="Apagar"/>
+</form>
+	<script language="JavaScript">
+
+var n1;
+var n2;
+var soma;
+function soma(){
+	//Entrada de dados 
+n1 = parseInt(document.MeuFormulario.f_n1.value);
+n2 = parseInt(document.MeuFormulario.f_n2.value);
+
+//Processamento
+soma = n1+n2;
+
+//Impressão
+window.alert("O valor da soma é " + soma);}
+
+//-->
+</script>    
+</body>
+</html>
